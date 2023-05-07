@@ -1,14 +1,15 @@
 <template>
   <p class="note">ⓘ 画面を左右にドラッグしてみよう</p>
   <a class="btn" href="https://akinen.com">Akinen.com</a>
-  <NuxtLink to="xr" class="btn btn__right">▶</NuxtLink>
+  <NuxtLink to="/" class="btn btn__left">◀</NuxtLink>
+  <NuxtLink to="about" class="btn btn__right">▶</NuxtLink>
   <div ref="threeContainer" class="three-container"></div>
 </template>
 
 <script>
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import bgImg from '/assets/image/TOP.jpg'
+import bgImg from '/assets/image/XR.jpg'
 
 export default {
   data() {
